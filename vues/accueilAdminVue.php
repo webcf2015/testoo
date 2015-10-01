@@ -38,7 +38,7 @@ if(empty($prend)) echo "<h3>Pas d'articles</h3>";
                 echo "<p>Ecrit le " . $valeur->ladate . " | Par $valeur->lelogin | ";
                 echo "<img src='vues/img/modif.png' onclick='document.location.href=\"?slug=$valeur->leslug\"' alt='modifier' /> |";
                 // si on est modérateur ET que l'article nous appartient
-                if($_SESSION['droit_id']==2 && $valeur->utilisateur_id==$_SESSION['id']) echo "<img src='vues/img/sup.png' onclick='supr(\"$valeur->leslug\" ,\"$valeur->id\")' alt='supprimer' /> |";
+                if($_SESSION['droit_id']==2 && $valeur->utilisateur_id==$_SESSION['id'] || $_SESSION['droit_id']!=2) echo "<img src='vues/img/sup.png' onclick='supr(\"$valeur->leslug\" ,\"$valeur->id\")' alt='supprimer' /> |";
                 echo "</p><p>".substr($valeur->letexte,0,500)."...</div>";
                 echo "<hr/>";
 
