@@ -49,7 +49,7 @@ class Article {
     }
 
     public function setLetitre($letitre) {
-        $this->letitre = htmlentities(strip_tags(trim($letitre)),ENT_QUOTES);
+        $this->letitre = htmlentities(strip_tags(trim($letitre)),ENT_QUOTES, "UTF-8");
 
         return $this;
     }
@@ -69,7 +69,7 @@ class Article {
     }
 
     public function setLetexte($letexte) {
-        $this->letexte = htmlentities(strip_tags($letexte),ENT_QUOTES);
+        $this->letexte = htmlentities(strip_tags($letexte),ENT_QUOTES, "UTF-8");
 
         return $this;
     }
