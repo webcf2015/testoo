@@ -38,7 +38,7 @@ if(empty($prend)) echo "<h3>Pas d'articles</h3>";
                 echo "<p>Ecrit le " . $valeur->ladate . " | Par $valeur->lelogin | ";
                 if($modif) echo "<img src='vues/img/modif.png' onclick='document.location.href=\"?slug=$valeur->leslug\"' alt='modifier' /> |";
                 if($sup) echo "<img src='vues/img/sup.png' onclick='supr(\"$valeur->leslug\" ,\"$valeur->id\")' alt='supprimer' /> |";
-                echo "</p><p>".substr($valeur->letexte,0,300)."... <a href='?page=$valeur->leslug'>lire plus</a></div>";
+                echo "</p><p>".substr($valeur->letexte,0,500)."...</div>";
                 echo "<hr/>";
 
             }

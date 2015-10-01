@@ -33,7 +33,7 @@
                 echo "<div class='blog-post'>";
                 echo "<h2 class='blog-post-title'>$un->letitre</h2>";
                 echo "<p>Ecrit le " . $un->ladate . " | Par $un->lelogin</p>";
-                echo "<p>$un->letexte</div>";
+                echo "<p>".nl2br($un->letexte)."</div>";
                 echo "<hr/>";
 
 

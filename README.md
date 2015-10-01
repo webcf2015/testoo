@@ -17,3 +17,6 @@ V1 :
 
 V1.1
 - protection des champs titres et textes
+
+V1.2
+- Modification des vues accueilAdmin et pageArticle
