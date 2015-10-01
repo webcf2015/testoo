@@ -14,3 +14,6 @@ V1 :
 - Pas encore de protections contre les attaques (pas de traitement htmlentities etc...)
 - Le modérateur ne peut supprimer ses news
 - Mauvais fonctionnement de la classe Session chez OVH (session_status() non reconnu)
+
+V1.1
+- protection des champs titres et textes
