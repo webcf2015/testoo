@@ -1,5 +1,6 @@
 <?php
-
+// pour l'affichage des erreurs sur OVH
+ini_set("display_errors","1");
 /* 
  * Contrôleur frontal
  */
