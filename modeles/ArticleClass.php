@@ -49,7 +49,7 @@ class Article {
     }
 
     public function setLetitre($letitre) {
-        $this->letitre = $letitre;
+        $this->letitre = htmlentities(strip_tags(trim($letitre)),ENT_QUOTES);
 
         return $this;
     }
@@ -69,7 +69,7 @@ class Article {
     }
 
     public function setLetexte($letexte) {
-        $this->letexte = $letexte;
+        $this->letexte = htmlentities(strip_tags($letexte),ENT_QUOTES);
 
         return $this;
     }
@@ -79,7 +79,7 @@ class Article {
     }
 
     public function setUtilisateur_id($utilisateur_id) {
-        $this->utilisateur_id = $utilisateur_id;
+        $this->utilisateur_id = (int) $utilisateur_id;
 
         return $this;
     }
