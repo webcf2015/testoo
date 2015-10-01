@@ -58,12 +58,7 @@ if(isset($_POST['lelogin'])){
 
 // si on est sur la page d'accueil de l'admin
     if(empty($_GET)){
-        // on peut modifier et supprimer (affichage boutons)
-        $modif=true;$sup=true;
-        // si on est modérateur (on ne peut que modifier)
-        if($_SESSION['droit_id']==2){
-            $modif=true;$sup=false;
-        }
+        
     // Appel de la vue
     require_once 'vues/accueilAdminVue.php';
     }
@@ -96,6 +91,8 @@ if(isset($_POST['lelogin'])){
     
 // on a cliqué sur ajouter
     if(isset($_GET['ajout'])&&empty($_POST['met'])){
+        // heure par défaut
+        $heure = date("Y-m-d H:i:s");
         // récupération de tous les utilisateurs
         $manageUtil = new UtilisateurManager();
         $util = $manageUtil->getList();

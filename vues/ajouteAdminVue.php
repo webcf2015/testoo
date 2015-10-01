@@ -33,7 +33,7 @@
                 <h2 class='blog-post-title'>Ajout d'un article</h2>
                 <form action="" name='met' method='POST'>
                     Titre <input type="text" name='met[letitre]' value="" required /><br/>
-                    La date <input type="datetime" name='met[ladate]' value="" required /><br/>
+                    La date <input type="datetime" name='met[ladate]' value="<?php echo $heure ?>" required /><br/>
                     <input type='hidden' name="met[utilisateur_id]" value='<?php echo $_SESSION['id'];?>'>
            
                     <textarea name='met[letexte]' required></textarea><br/>

@@ -20,3 +20,7 @@ V1.1
 
 V1.2
 - Modification des vues accueilAdmin et pageArticle
+
+V1.3
+- Mise de l'heure actuelle par défaut lors de la création d'artiste
+- L'administrateur peut supprimer ses articles
