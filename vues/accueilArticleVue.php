@@ -24,6 +24,7 @@
       <div class="blog-header">
         <h1 class="blog-title">Nos articles - Accueil</h1>
         <p class="lead blog-description">Affichage de tous nos articles</p>
+        <h2>Le projet sur <a href='https://github.com/webcf2015/testoo' target="_blank">github</a></h2>
       </div>
 
       <div class="row">
