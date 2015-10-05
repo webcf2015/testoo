@@ -26,6 +26,8 @@ class Article {
     }
 
     private function creeSlug($text) {
+        // pour que le slug ne soit pas avec des htmlentities
+        $text = html_entity_decode($text, ENT_QUOTES, "UTF-8");
         $text = preg_replace('~[^\\pL\d]+~u', '-', $text);
 
         // trim
